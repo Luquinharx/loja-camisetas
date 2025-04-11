@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Estilos Globais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Carrinho */
+.cart-items {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item:hover {
+    background-color: #f9f9f9;
+}
+
+.item-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-number {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Controles de Quantidade */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.quantity-btn {
+    background: #000;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background: #333;
+}
+
+.quantity-display {
+    font-weight: bold;
+    min-width: 40px;
+    text-align: center;
+}
+
+/* Status de Estoque */
+.stock-status {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.in-stock {
+    color: #27ae60;
+}
+
+.out-of-stock {
+    color: #e74c3c;
+}
+
+/* Botão Remover */
+.remove-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+}
+
+.remove-btn:hover {
+    background: #c0392b;
+}
+
+/* Resumo do Carrinho */
+.cart-summary {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Botão Finalizar Compra */
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background: #333;
+}
+
+/* Estilos quando o Carrinho estiver vazio */
+.empty-cart {
+    text-align: center;
+    padding: 50px 20px;
+    color: #666;
+}
+
+.empty-cart h2 {
+    margin-bottom: 20px;
+}
+
+.continue-shopping {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.continue-shopping:hover {
+    background: #333;
+}
+
+/* Botões de Navegação - Voltar e Comprar */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.navigation-buttons div {
+    flex: 1;
+}
+
+.back-button, .continue-shopping {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+/* Mudando a cor de todos os botões para preto */
+.back-button, .continue-shopping, .checkout-btn {
+    background-color: #000;
+    color: white;
+}
+
+.back-button:hover, .continue-shopping:hover, .checkout-btn:hover {
+    background-color: #333;
+}
+
+/* Adicionando a divisória entre os botões */
+.navigation-buttons div:first-child {
+    margin-right: 10px;
+}
+
+.navigation-buttons div {
+    border-right: 1px solid #eee;
+    padding-right: 10px;
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item-image {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .quantity-controls {
+        justify-content: center;
+    }
+
+    .remove-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .checkout-btn {
+        font-size: 1rem;
+    }
+
+    .cart-summary {
+        padding: 10px;
+    }
+
+    .navigation-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .back-button, .continue-shopping {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    /* Estilo para os títulos no mobile */
+    .cart-header {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .cart-summary {
+        padding: 15px;
+    }
+    
+    .summary-row {
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+
+    /* Ajustando os itens no carrinho para ocuparem 100% da largura no mobile */
+    .cart-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .item-price {
+        font-size: 1rem;
+    }
+
+    .item-name {
+        font-size: 1rem;
+    }
+}

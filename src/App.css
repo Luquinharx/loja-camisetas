@@ -1,0 +1,86 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.home-hero {
+  background-color: #ccc;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.home-hero .hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.home-hero .btn {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.home-hero .btn:hover {
+  background-color: darkorange;
+}
+
+/* Categorias */
+.home-categorias {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: #eee;
+}
+
+.categoria h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Bestsellers */
+.home-bestsellers {
+  padding: 20px;
+  text-align: center;
+}
+
+.bestseller-placeholder {
+  height: 150px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  font-size: 1rem;
+}

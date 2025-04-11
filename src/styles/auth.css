@@ -1,0 +1,161 @@
+/* Reseta margens e padding */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+}
+
+/* Contêiner principal para centralizar o conteúdo verticalmente */
+.auth-container {
+  width: 100%;
+  min-height: 100vh; /* Garante que o contêiner ocupe toda a altura da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor visualização */
+}
+
+/* Estilos para o card de autenticação */
+.auth-card {
+  position: relative;
+  width: 400px;
+  padding: 30px;
+  background: #f1f1f1; /* Cor de fundo mais clara */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+/* Centralizando o título e subtítulo */
+.auth-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.home-button i {
+  margin-right: 5px;
+}
+
+.auth-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.auth-subtitle {
+  font-size: 14px;
+}
+
+.error-message,
+.success-message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error-message {
+  background-color: #f8d7da; /* Cor de fundo para mensagens de erro */
+  color: #721c24; /* Cor do texto para mensagens de erro */
+}
+
+.success-message {
+  background-color: #d4edda; /* Cor de fundo para mensagens de sucesso */
+  color: #155724; /* Cor do texto para mensagens de sucesso */
+}
+
+/* Ajustando os campos de entrada */
+.form-group {
+  margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+.form-group input {
+  width: 100%; /* Largura total do campo */
+  padding: 10px; /* Espaçamento interno do campo */
+  margin: 10px 0; /* Margem superior e inferior */
+  border-radius: 5px; /* Bordas arredondadas */
+  border: 1px solid #ccc; /* Borda cinza clara */
+}
+
+.form-group input:focus {
+   outline:none; /* Remove o contorno padrão ao focar no campo */
+   border-color:#742ECC; /* Cor da borda ao focar no campo */
+   box-shadow:0px0px5pxrgba(116,46,204,0.6); /* Sombra ao redor do campo ao focar */
+}
+
+/* Botão de envio */
+.submit-button {
+   width :100%; /* Largura total do botão */
+   padding :10px; /* Espaçamento interno do botão */
+   background-color :#000; /* Cor de fundo do botão (preto) */
+   border :none; /* Remove a borda padrão do botão */
+   color :#fff; /* Cor do texto do botão (branco) */
+   cursor :pointer; /* Cursor em forma de ponteiro ao passar sobre o botão */
+   border-radius :5px; /* Bordas arredondadas do botão */
+}
+
+.submit-button:hover {
+   background-color :#444; /* Tom mais escuro ao passar o mouse sobre o botão */
+}
+
+/* Link para alternar entre login e cadastro */
+.toggle-auth {
+   text-align :center; 
+   margin-top :20px; 
+}
+
+.toggle-auth button {
+   background :none; 
+   border :none; 
+   color :#888; 
+   cursor :pointer; 
+}
+
+.toggle-auth button:hover {
+   color :#444; 
+}
+
+/* Estilo do botão "Esqueceu sua senha?" */
+.forgot-password {
+   text-align :right; 
+   margin-bottom :10px; 
+}
+
+.forgot-password button {
+   color :#742ECC; /* Cor roxa para o botão "Esqueceu sua senha?" */
+   font-size :14px; 
+   background :none; 
+   border :none; 
+   cursor :pointer; 
+}
+
+.forgot-password button:hover {
+   color :#6f25c5; /* Cor mais escura ao passar o mouse sobre o botão "Esqueceu sua senha?" */
+   text-decoration :underline; /* Sublinhado ao passar o mouse sobre o botão "Esqueceu sua senha?" */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width :768px) {
+    .auth-card {
+        width :300px; /* Largura reduzida em dispositivos móveis */
+    }
+
+    .form-group input {
+        padding :8px; /* Reduz o preenchimento em dispositivos móveis */
+    }
+
+    .submit-button {
+        padding :8px; /* Reduz o preenchimento em dispositivos móveis */
+    }
+
+    .toggle-auth button {
+        font-size :14px; /* Tamanho da fonte reduzido em dispositivos móveis */
+    }
+}

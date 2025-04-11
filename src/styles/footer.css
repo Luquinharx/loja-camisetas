@@ -1,0 +1,178 @@
+/* Rodapé */
+.footer {
+  background-color: #cccccc;
+  padding: 20px 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0; /* Removido margin-top */
+  position: relative; /* Corrigido para relative em vez de absolute */
+  bottom: 0; /* Certifique-se de que está no fundo */
+  border: none; /* Remova qualquer borda */
+  box-shadow: none; /* Remova qualquer sombra */
+  overflow: hidden; /* Adicionado para evitar margens brancas */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* Seção de Quem Somos e Contato */
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.quem-somos, .contato {
+  width: 40%;
+  text-align: left;
+  color: #000000;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contato p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.social-icons a i {
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #ff9900;
+}
+
+/* Alinhamento dos ícones com a escrita */
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contato p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Informações Finais */
+.info-final {
+  margin-top: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.info-final p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.support-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adicionado sombra ao botão */
+}
+
+.support-btn:hover {
+  background-color: #333333;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quem-somos, .contato {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    gap: 20px;
+  }
+
+  .info-final p {
+    font-size: 0.8rem;
+  }
+
+  .support-btn {
+    padding: 8px 15px;
+  }
+}
